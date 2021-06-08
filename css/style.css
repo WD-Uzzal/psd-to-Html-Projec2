@@ -27,6 +27,7 @@ body{
     background-image: url(../img/bg1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-size: cover;
 }
 .navbar-brand{
     font-size: 45px;
@@ -57,16 +58,17 @@ background-color: #ffe171;
 border-radius: 50px;
 width: 120px;
 text-align: center;
+display: block;
 }
 .common-work{
     display: flex;
     padding-top: 90px;
     padding-bottom: 120px;
     justify-content: space-between;
-    
+    flex-wrap: nowrap;
 }
 .half-width{
-    width: 100%;
+    width: 50%;
 }
 .half-width img{
     max-width: 80%;
@@ -150,6 +152,7 @@ border-radius: 50px;
     justify-content: space-between;
     padding-top: 100px;
     margin-bottom: 100px;
+    flex-wrap: nowrap;
 }
 .service-col .service-title h3{
     font-size: 24px;
