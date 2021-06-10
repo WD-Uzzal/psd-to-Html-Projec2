@@ -1,4 +1,4 @@
-@media only screen and (max-width : 920px) {
+@media only screen and (max-width : 768px) {
     .header-area{
         height: 100%;   
     }
@@ -24,12 +24,16 @@
         display: none;
         
         }
+        .half-width{
+            max-width: 70%;
+        }
         .common-work{
             display: flex;
             /* flex-wrap: wrap; */
             padding-top: 70px;
             padding-bottom: 30px;
             flex-direction: column;
+            align-items: center;
            
         }
         .half-width{
@@ -88,6 +92,7 @@
             margin-bottom: 50px;
             flex-direction: column;
             text-align: center;
+            align-items: center;
         }
         .service-col .service-title h3{
             font-size: 20px;
@@ -160,8 +165,8 @@
             display: flex;
             flex-wrap: wrap;
             margin-bottom: 20px;
-            }
             
+            }
             .nav-area ul li{
                font-size: 12px;
                 margin: 10px;  
@@ -174,7 +179,8 @@
                 left: 130px;
             }
             .quote i{             
-               left: 150px;  
+               left: 150px;
+               font-size: 30px;  
             }
             .owl-theme .owl-dots .owl-dot span{
                 position: relative;
@@ -186,13 +192,16 @@
                 display: flex;
                 flex-wrap: wrap;
                 margin-top: 20px;
+                align-items: center;
+                justify-content: center;
                 }
                 .news-area .common-title .agency::after{
                     left: 130px;
                 }
-                .content-area{
-                    margin-left: -5px;
-                    margin-top: 10px;
+                
+                .content-area h4, .content-area p{
+                    margin-left: -20px;
+                    margin-top: 5px;
                 }
                 .content-area h4{
                     font-size: 16px; 
@@ -235,14 +244,67 @@
                     }
            
 }
-@media only screen and (min-width : 900px) {
+@media only screen and (min-width : 769px) and (max-width: 991px) {
+    .main-title{
+        font-size: 40px;
+        
+        
+    }
+    .navbar-nav{
+        margin-top: 40px; 
+    }
     .nav-item .nav-link{
         color:  #0a0656!important;
         text-align: center;
         margin: 10px;
     }
+    .nav-item .last{
+        display: none;
+        
+        }
         .nav-area ul li{
             font-size: 10px;
              margin: 10px;  
          }
+        .owl-theme .owl-dots .owl-dot span{
+            position: relative;
+            bottom: 0px;
+            right: 230px; 
+            margin-top: -110px;
+        }
+        .quote i{             
+            left: 150px;
+            font-size: 30px;  
+         }
+         .content-area{
+             margin-top: 0;
+         }
+         .content-area h4{
+            font-size: 15px;
+        }
+        .content-area p{
+            font-size: 13px;
+        }
+        .img-area p {
+            position: absolute;
+            bottom: 26px;
+            right: 41px;   
+        }
+}
+@media only screen and (min-width : 991px) and (max-width: 1201px){
+    .owl-theme .owl-dots .owl-dot span{
+        position: relative;
+        bottom: 0px;
+        right: 350px; 
+        margin-top: -140px;
+    }
+    .img-area p {
+        position: absolute;
+        bottom: 30px;
+        right: 49px;   
+    }
+    .quote i{             
+        left: 150px;
+        font-size: 30px;  
+     }
 }
